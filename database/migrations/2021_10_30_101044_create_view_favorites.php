@@ -14,7 +14,7 @@ class CreateViewFavorites extends Migration
     public function up()
     {
         Schema::create('view_favorites', function (Blueprint $table) {
-            $table->bigIcrement('fav_id');
+            $table->bigIncrements('fav_id');
             $table->string('name', 30);
             $table->string('origin', 20);
             $table->text('description');
